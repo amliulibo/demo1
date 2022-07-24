@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <style>
+        *{
+            margin:none;
+            padding: none;
+        }
+        .header li{
+            float: left;
+            list-style-type: none;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="header">
+        <li>名称</li>
+        <li>描述</li>
+        <li>单价</li>
+        <li>数量</li>
+    </ul>
+    <br><br>
+    <ul id="box"></ul>
+    总价：<span id="sum"></span>
+    <script src="./shopingcart.js"></script>
+</body>
+</html>
