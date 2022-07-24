@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>vue2x</title>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>events</h1>
+        <button @click="age++">涨一岁</button>
+        <button @click="age--">减一岁</button>
+        <p>my age is {{age}}</p>
+        <div id="canvas" @mousemove="updateXY">
+            {{x}},{{y}} - 
+            <span @mousemove="stopMoving">stop moving</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
